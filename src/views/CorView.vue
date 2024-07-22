@@ -3,7 +3,7 @@ import { ref, reactive, onMounted } from "vue";
 import CoresApi from "@/api/cores";
 const coresApi = new CoresApi();
 
-const defaultCor = { id: null, nome: "" };
+const defaultCor = { id: null, descricao: "" };
 const cores = ref([]);
 const cor = reactive({ ...defaultCor });
 

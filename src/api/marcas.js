@@ -9,7 +9,7 @@ export default class MarcasApi {
     return data.results;
   }
   async atualizarMarca(marca) {
-    const { data } = await axios.put(`/marcas/${marcas.id}/`, marca);
+    const { data } = await axios.put(`/marcas/${marca.id}/`, marca);
     return data.results;
   }
   async excluirMarca(id) {
